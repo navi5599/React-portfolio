@@ -1,0 +1,63 @@
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 15px 1fr 15px 1fr 15px 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 15px;
+  width: 92.5%;
+  margin: 0 auto;
+}
+
+.grid_item {
+  height: 200px;
+  padding: 10px;
+  margin: 0;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid var(--turqoise-color);
+  border-radius: 0.35rem;
+}
+
+.button_div {
+  padding-top: 35px;
+}
+
+.card_header {
+  font-size: 50px;
+}
+
+h2 {
+  font-weight: 900;
+}
+
+.grid_links {
+  display: inline-block;
+}
+
+.work {
+  text-transform: uppercase;
+  font-size: 80px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+
+/** PHONE VIEW **/
+
+@media (max-width: 800px) {
+  .work {
+    text-transform: uppercase;
+    font-size: 40px;
+  }
+  .grid_item {
+    height: 250px !important;
+    width: 320px;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

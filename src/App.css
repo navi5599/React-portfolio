@@ -27,8 +27,8 @@ body {
 }
 
 :root {
-  --white-color: aliceblue;
-  --blue-color: deepskyblue;
+  --white-color: #f0f8ff;
+  --blue-color: #00bfff;
   --dark-blue: #1b1644;
   --turqoise-color: paleturquoise;
 }

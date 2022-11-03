@@ -1,0 +1,30 @@
+.page-footer {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  height: 250px;
+  padding-top: 100px;
+  background-color: var(--white-color);
+  color: var(--dark-blue);
+}
+
+.social-media img {
+  margin: 5px;
+  width: 38px;
+}
+
+/* Footer icon animations */
+
+.twitter-icon:hover,
+.github-icon:hover,
+.linkedin-icon:hover {
+  transform: scale(1.3);
+  -webkit-animation: 2s ease;
+  transition: ease-in-out 0.33s;
+}
