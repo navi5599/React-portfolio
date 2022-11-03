@@ -1,0 +1,38 @@
+body {
+  color: var(--white-color);
+}
+
+.hello {
+  text-transform: uppercase;
+  font-size: 100px;
+  text-align: center;
+}
+
+span {
+  color: var(--blue-color);
+}
+
+.text_section {
+  display: flex;
+  align-items: center;
+}
+
+.code_link {
+  margin-top: 20px;
+  border: 2px solid var(--blue-color);
+  color: var(--white-color);
+  padding: 5px 20px;
+  width: 150px;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.code_link:hover {
+  background-color: var(--blue-color);
+  transition: 0.3s ease-in-out;
+}
+
+.image {
+  width: 700px;
+}

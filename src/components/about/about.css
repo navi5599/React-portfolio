@@ -1,0 +1,133 @@
+body {
+  min-height: 100vh;
+}
+
+.white {
+  background-color: var(--white-color);
+  width: 100%;
+  height: 535px;
+  position: absolute;
+  z-index: 1;
+}
+
+.about_heading {
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  font-size: 80px;
+  align-items: center;
+  color: var(--dark-blue);
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+
+.dark_text {
+  color: var(--dark-blue);
+}
+
+.profile {
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.profile-text {
+  max-width: 500px;
+  z-index: 2;
+}
+
+.profile_portrait {
+  z-index: 2;
+  width: 350px;
+  height: 350px;
+  border-radius: 10%;
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.19));
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.5) 0px 6px 6px;
+}
+
+span {
+  color: var(--blue-color);
+}
+
+ul li img {
+  width: 50px;
+  height: 50px;
+}
+
+.skills {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.skills p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.icon_list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+}
+
+.icon_list img {
+  margin-left: 20px;
+}
+
+.contrast_icon {
+  background-color: var(--white-color);
+  border-radius: 5px;
+}
+
+.download_cv_btn {
+  margin-top: 20px;
+  margin-left: 40px;
+  border: 2px solid var(--blue-color);
+  color: var(--white-color);
+  padding: 5px 20px;
+  width: 150px;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.download_cv_btn:hover {
+  background-color: var(--blue-color);
+  transition: 0.3s ease-in-out;
+}
+
+/** Mobile view **/
+@media (max-width: 800px) {
+  .about_heading {
+    text-transform: uppercase;
+    font-size: 40px;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile_portrait {
+    width: 250px;
+    height: 250px;
+  }
+
+  .profile-text {
+    padding: 40px;
+  }
+  .skills {
+    margin: 0 auto !important;
+  }
+  .icon_list {
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+}
