@@ -105,6 +105,12 @@
   color: var(--white-color);
 }
 
+textarea {
+  resize: none;
+  width: 80%;
+  height: 100px !important;
+}
+
 @media (max-width: 800px) {
   .contact_card {
     display: flex;

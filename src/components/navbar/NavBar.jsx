@@ -1,26 +1,36 @@
 import React from 'react';
+import { Link } from 'react-scroll';
+
 import './navbar.css';
 
 function NavBar() {
   return (
     <nav className="navbar">
       <h1>
-        <a className="logo" href="#">
+        <Link className="logo" to="h0me" smooth={true} duration={1000}>
           Ivan Kelava
-        </a>
+        </Link>
       </h1>
       <ul className="list">
         <li>
-          <a href="#">Home</a>
+          <Link to="h0me" smooth={true} duration={1000}>
+            Home
+          </Link>
         </li>
         <li>
-          <a href="#">About me</a>
+          <Link to="white" smooth={true} duration={1000}>
+            About me
+          </Link>
         </li>
         <li>
-          <a href="#">My Work</a>
+          <Link to="w0rk" smooth={true} duration={1000}>
+            My Work
+          </Link>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <Link to="contact" smooth={true} duration={1000}>
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>

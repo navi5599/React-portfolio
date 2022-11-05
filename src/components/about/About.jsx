@@ -1,12 +1,17 @@
 import React from 'react';
+import Scroll from '../scrollButton/Scroll';
+
 import './about.css';
 import profile from '../../img/portrait.jpeg';
 
 function About() {
   return (
     <>
-      <div className="white"></div>
-      <h1 className="about_heading">
+      <div id="white" className="white">
+        <Scroll />
+      </div>
+
+      <h1 id="about" className="about_heading">
         About <span>me</span>!
       </h1>
 
@@ -38,7 +43,12 @@ function About() {
           <p>
             Here you can download my CV{' '}
             <span>
-              <a href="#" target="_self" class="download_cv_btn code" download>
+              <a
+                href="#"
+                target="_self"
+                className="download_cv_btn code "
+                download
+              >
                 Download CV
               </a>
             </span>
@@ -87,21 +97,21 @@ function About() {
           </li>
           <li>
             <img
-              class="contrast_icon"
+              className="contrast_icon"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
               alt="node icon"
             />
           </li>
           <li>
             <img
-              class="contrast_icon"
+              className="contrast_icon"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
               alt="mongo icon"
             />
           </li>
           <li>
             <img
-              class="contrast_icon"
+              className="contrast_icon"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg"
               alt="express icon"
             />

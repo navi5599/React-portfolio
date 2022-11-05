@@ -1,12 +1,40 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { useInView } from 'react-intersection-observer';
+import 'animate.css';
+import emailjs from '@emailjs/browser';
+
 import './contact.css';
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_t3aw5v8',
+        'template_jzfnqbe',
+        form.current,
+        'zre67_jv3bjsZq2Nj'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <>
-      <h1 className="contact_heading">Contact me</h1>
+      <h1 id="contact" className="contact_heading">
+        Contact me
+      </h1>
       <div className="contact_card">
-        <div className="second_card animate__animated animate__backInLeft">
+        <div className="second_card">
           <h3>My contact Info</h3>
           <ul className="contact_list">
             <li>
@@ -26,7 +54,7 @@ function Contact() {
           </ul>
         </div>
 
-        <form className="first_card animate__animated animate__backInRight">
+        <form ref={form} className="first_card">
           <h3>Send me a message</h3>
           <input
             id="name"
@@ -58,13 +86,13 @@ function Contact() {
             className="contact_input text"
             placeholder="Your message.."
           ></textarea>
-          <button className="contact_input submit_button" onclick="sendMail()">
+          <button className="contact_input submit_button" onClick={sendEmail}>
             SUBMIT
           </button>
         </form>
 
-        <div class="second_card copy animate__animated animate__backInLeft">
-          <ul class="contact_list">
+        <div className="second_card copy ">
+          <ul className="contact_list">
             <li>
               <span>Phone</span>
               <a href="tel:+491707183441">+49 170 718 3441</a>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import './home.css';
 import 'animate.css';
 import img from '../../img/removebg.png';
@@ -6,6 +7,7 @@ import img from '../../img/removebg.png';
 function Home() {
   return (
     <>
+      <div id="h0me"></div>
       <div className="home">
         <h1 className="hello animate__animated animate__fadeInDown">
           Hel<span>l</span>
@@ -28,9 +30,14 @@ function Home() {
             <br></br>
             <p>Check out some of my code</p>
             <br></br>
-            <a href="#" target="_self" class="code_link code">
+            <Link
+              to="w0rk"
+              smooth={true}
+              duration={1000}
+              className="code_link code"
+            >
               Code
-            </a>
+            </Link>
           </div>
         </div>
       </div>

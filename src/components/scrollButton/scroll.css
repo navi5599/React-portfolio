@@ -1,0 +1,10 @@
+.scroll {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  top: 590px;
+
+  z-index: 3;
+}

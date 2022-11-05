@@ -6,11 +6,11 @@ function Work() {
   return (
     <>
       <section>
-        <h1 className="work">
+        <h1 id="w0rk" className="work">
           My <span>wo</span>rk
         </h1>
         <div className="grid">
-          <div className="grid_item grid_1 animate__animated animate__fadeInUp">
+          <div className="grid_item grid_1 ">
             <h2>Meet app</h2>
             <p className="card_text">
               Serverless PWA App made using React.Uses Google api to fetch data
@@ -18,7 +18,7 @@ function Work() {
             </p>
           </div>
 
-          <div className="grid_item grid_2 animate__animated animate__fadeInUp">
+          <div className="grid_item grid_2 ">
             <h2>myFlix Movie app</h2>
             <p className="card_text">
               This is a simple movie app built with React-Redux for client side,
@@ -26,7 +26,7 @@ function Work() {
             </p>
           </div>
 
-          <div className="grid_item grid_3 animate__animated animate__fadeInUp">
+          <div className="grid_item grid_3 ">
             <h2>Pokedex App</h2>
             <p className="card_text">
               This is a simple JavaScript app,called Pokedex,that fetches a list
@@ -34,7 +34,7 @@ function Work() {
             </p>
           </div>
 
-          <div className="grid_item grid_4 animate__animated animate__fadeInUp">
+          <div className="grid_item grid_4 ">
             <h2>Chat App</h2>
             <p className="card_text">
               This is a React Native App developed using Expo. Within app itself
@@ -43,7 +43,7 @@ function Work() {
             </p>
           </div>
 
-          <div className="grid_item grid_5 animate__animated animate__fadeInUp">
+          <div className="grid_item grid_5 ">
             <h2>myFlix Movie app (Angular)</h2>
             <p className="card_text">
               This is a simple movie app built with Angular for client side, and
@@ -52,7 +52,7 @@ function Work() {
             </p>
           </div>
 
-          <div className="grid_item grid_6 animate__animated animate__fadeInUp">
+          <div className="grid_item grid_6 ">
             <h2>myFlix REST API</h2>
             <p className="card_text">
               This is an REST API for application called myFlix (Both React and
