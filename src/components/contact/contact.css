@@ -111,6 +111,21 @@ textarea {
   height: 100px !important;
 }
 
+.error_msg {
+  font-size: small;
+  color: red;
+}
+
+.success_message {
+  font-size: small;
+  color: rgb(131, 215, 5);
+}
+
+button:disabled {
+  background-color: grey;
+  opacity: 0.75;
+}
+
 @media (max-width: 800px) {
   .contact_card {
     display: flex;

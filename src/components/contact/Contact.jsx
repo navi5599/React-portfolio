@@ -1,32 +1,61 @@
-import React, { useRef } from 'react';
-import { useInView } from 'react-intersection-observer';
+import React, { useState } from 'react';
 import 'animate.css';
 import emailjs from '@emailjs/browser';
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
 
 import './contact.css';
 
 function Contact() {
-  const form = useRef();
+  const [success, setSuccess] = useState('');
+  //Formik Logic
+  const formik = useFormik({
+    initialValues: {
+      name: '',
+      phone: '',
+      email: '',
+      message: '',
+    },
+    //Validate form with yup
+    validationSchema: Yup.object({
+      name: Yup.string()
+        .max(20, 'Name should be less than 20 characters')
+        .required('Name is required'),
+      phone: Yup.number()
+        .typeError('You should use numbers!')
+        .required('Phone is required'),
+      email: Yup.string()
+        .email('Invalid email address')
+        .required('Email is required'),
+      message: Yup.string().required('Why would you send an empty message? ..'),
+    }),
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+    onSubmit: (values, actions) => {
+      console.log(values);
 
-    emailjs
-      .sendForm(
-        'service_t3aw5v8',
-        'template_jzfnqbe',
-        form.current,
-        'zre67_jv3bjsZq2Nj'
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+      //Send an email via emailjs
+      emailjs
+        .send(
+          'service_t3aw5v8',
+          'template_jzfnqbe',
+          values,
+          'zre67_jv3bjsZq2Nj'
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            setSuccess('Message has been sent. Thank you!');
+            setTimeout(() => {
+              setSuccess('');
+            }, 3000);
+            actions.resetForm();
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    },
+  });
 
   return (
     <>
@@ -54,41 +83,80 @@ function Contact() {
           </ul>
         </div>
 
-        <form ref={form} className="first_card">
+        <form onSubmit={formik.handleSubmit} className="first_card">
           <h3>Send me a message</h3>
           <input
             id="name"
             name="name"
+            value={formik.values.name}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
             type="text"
             className="contact_input"
             placeholder="Full name"
-            required
           />
+
+          {formik.touched.name && formik.errors.name ? (
+            <p className="error_msg">{formik.errors.name}</p>
+          ) : (
+            ''
+          )}
+
           <input
             id="phone"
             name="phone"
+            value={formik.values.phone}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
             type="text"
             className="contact_input"
             placeholder="Phone number"
-            required
           />
+          {formik.touched.phone && formik.errors.phone ? (
+            <p className="error_msg">{formik.errors.phone}</p>
+          ) : (
+            ''
+          )}
+
           <input
             id="email"
             name="email"
+            value={formik.values.email}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
             type="text"
             className="contact_input"
             placeholder="Email"
-            required
           />
+          {formik.touched.email && formik.errors.email ? (
+            <p className="error_msg">{formik.errors.email}</p>
+          ) : (
+            ''
+          )}
+
           <textarea
             id="message"
             name="message"
+            value={formik.values.message}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
             className="contact_input text"
             placeholder="Your message.."
           ></textarea>
-          <button className="contact_input submit_button" onClick={sendEmail}>
-            SUBMIT
+          {formik.touched.message && formik.errors.message ? (
+            <p className="error_msg">{formik.errors.message}</p>
+          ) : (
+            ''
+          )}
+
+          <button
+            disabled={formik.isSubmitting}
+            type="submit"
+            className="contact_input submit_button"
+          >
+            SEND
           </button>
+          <p className="success_message">{success}</p>
         </form>
 
         <div className="second_card copy ">

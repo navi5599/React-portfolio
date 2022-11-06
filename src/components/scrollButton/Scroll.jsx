@@ -17,6 +17,7 @@ function Scroll() {
       window.removeEventListener('scroll', HandleScrollButtonVisibility);
     };
   }, []);
+
   return (
     <>
       {showButton ? (
