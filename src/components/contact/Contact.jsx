@@ -94,6 +94,7 @@ function Contact() {
             type="text"
             className="contact_input"
             placeholder="Full name"
+            autocomplete="off"
           />
 
           {formik.touched.name && formik.errors.name ? (
@@ -111,6 +112,7 @@ function Contact() {
             type="text"
             className="contact_input"
             placeholder="Phone number"
+            autocomplete="off"
           />
           {formik.touched.phone && formik.errors.phone ? (
             <p className="error_msg">{formik.errors.phone}</p>
@@ -127,6 +129,7 @@ function Contact() {
             type="text"
             className="contact_input"
             placeholder="Email"
+            autocomplete="off"
           />
           {formik.touched.email && formik.errors.email ? (
             <p className="error_msg">{formik.errors.email}</p>
@@ -142,6 +145,7 @@ function Contact() {
             onBlur={formik.handleBlur}
             className="contact_input text"
             placeholder="Your message.."
+            autocomplete="off"
           ></textarea>
           {formik.touched.message && formik.errors.message ? (
             <p className="error_msg">{formik.errors.message}</p>

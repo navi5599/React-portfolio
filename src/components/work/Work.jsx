@@ -1,66 +1,116 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import 'animate.css';
 import './work.css';
+import Project_1 from './projects/Project_1';
+import Project_2 from './projects/Project_2';
+import Project_3 from './projects/Project_3';
+import Project_4 from './projects/Project_4';
+import Project_5 from './projects/Project_5';
+import Project_6 from './projects/Project_6';
 
 function Work() {
+  const [id, setId] = useState('');
+  const [showGrid, setShowGrid] = useState(true);
+  const [showProject, setShowProject] = useState(false);
+
+  const handleProjects = (event) => {
+    console.log(event.currentTarget.id);
+    setId(event.currentTarget.id);
+    setShowGrid(!showGrid);
+    setShowProject(!showProject);
+  };
+
   return (
     <>
       <section>
         <h1 id="w0rk" className="work">
           My <span>wo</span>rk
         </h1>
-        <div className="grid">
-          <div className="grid_item grid_1 ">
-            <h2>Meet app</h2>
-            <p className="card_text">
-              Serverless PWA App made using React.Uses Google api to fetch data
-              for events.Developed using TDD approach.
-            </p>
-          </div>
+        {showGrid ? (
+          <div className="grid">
+            <div
+              id="project_1"
+              className="grid_item grid_1 "
+              onClick={handleProjects}
+            >
+              <h2>Meet app</h2>
+            </div>
 
-          <div className="grid_item grid_2 ">
-            <h2>myFlix Movie app</h2>
-            <p className="card_text">
-              This is a simple movie app built with React-Redux for client side,
-              and Mongo-Express for REST API, which app uses,to fetch movie data
-            </p>
-          </div>
+            <div
+              id="project_2"
+              className="grid_item grid_2 "
+              onClick={handleProjects}
+            >
+              <h2>Movie app React</h2>
+            </div>
 
-          <div className="grid_item grid_3 ">
-            <h2>Pokedex App</h2>
-            <p className="card_text">
-              This is a simple JavaScript app,called Pokedex,that fetches a list
-              of 150 Pokemons from external public API.
-            </p>
-          </div>
+            <div
+              id="project_3"
+              className="grid_item grid_3 "
+              onClick={handleProjects}
+            >
+              <h2>Pokedex App</h2>
+            </div>
 
-          <div className="grid_item grid_4 ">
-            <h2>Chat App</h2>
-            <p className="card_text">
-              This is a React Native App developed using Expo. Within app itself
-              user should be able to use chat interface,share images and
-              location.
-            </p>
-          </div>
+            <div
+              id="project_4"
+              className="grid_item grid_4 "
+              onClick={handleProjects}
+            >
+              <h2>Chat App</h2>
+            </div>
 
-          <div className="grid_item grid_5 ">
-            <h2>myFlix Movie app (Angular)</h2>
-            <p className="card_text">
-              This is a simple movie app built with Angular for client side, and
-              Mongo-Express for REST API, that app uses,to fetch data about
-              movies.
-            </p>
-          </div>
+            <div
+              id="project_5"
+              className="grid_item grid_5 "
+              onClick={handleProjects}
+            >
+              <h2>Movie app Angular</h2>
+            </div>
 
-          <div className="grid_item grid_6 ">
-            <h2>myFlix REST API</h2>
-            <p className="card_text">
-              This is an REST API for application called myFlix (Both React and
-              Angular ), that interacts with database and store data about
-              movies.
-            </p>
+            <div
+              id="project_6"
+              className="grid_item grid_6 "
+              onClick={handleProjects}
+            >
+              <h2>myFlix REST API</h2>
+            </div>
           </div>
-        </div>
+        ) : (
+          ''
+        )}
+
+        {showProject && id === 'project_1' ? (
+          <Project_1 handleProjects={handleProjects} />
+        ) : (
+          ''
+        )}
+        {showProject && id === 'project_2' ? (
+          <Project_2 handleProjects={handleProjects} />
+        ) : (
+          ''
+        )}
+        {showProject && id === 'project_3' ? (
+          <Project_3 handleProjects={handleProjects} />
+        ) : (
+          ''
+        )}
+        {showProject && id === 'project_4' ? (
+          <Project_4 handleProjects={handleProjects} />
+        ) : (
+          ''
+        )}
+        {showProject && id === 'project_5' ? (
+          <Project_5 handleProjects={handleProjects} />
+        ) : (
+          ''
+        )}
+        {showProject && id === 'project_6' ? (
+          <Project_6 handleProjects={handleProjects} />
+        ) : (
+          ''
+        )}
       </section>
     </>
   );

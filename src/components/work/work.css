@@ -3,19 +3,57 @@
   display: grid;
   -ms-grid-columns: 1fr 15px 1fr 15px 1fr 15px 1fr;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: 15px;
+  grid-gap: 25px;
   width: 92.5%;
   margin: 0 auto;
 }
 
 .grid_item {
-  height: 200px;
+  height: 250px;
   padding: 10px;
   margin: 0;
+  display: flex;
   justify-content: center;
-  text-align: center;
-  border: 2px solid var(--turqoise-color);
+  align-items: center;
   border-radius: 0.35rem;
+  cursor: pointer;
+}
+
+.grid_item:hover {
+  opacity: 1;
+  box-shadow: rgba(134, 134, 214, 0.386) 0px 6px 12px -2px,
+    rgba(34, 36, 107, 0.44) 0px 3px 7px -3px;
+}
+
+.grid_1 {
+  background-image: url('../../img/projects/meet.jpeg');
+  background-size: cover;
+  opacity: 0.6;
+}
+.grid_2 {
+  background-image: url('../../img/projects/movie1.jpeg');
+  background-size: cover;
+  opacity: 0.6;
+}
+.grid_3 {
+  background-image: url('../../img/projects/pokedex.jpeg');
+  background-size: cover;
+  opacity: 0.6;
+}
+.grid_4 {
+  background-image: url('../../img/projects/chat2.jpeg');
+  background-size: cover;
+  opacity: 0.6;
+}
+.grid_5 {
+  background-image: url('../../img/projects/movie2.jpeg');
+  background-size: cover;
+  opacity: 0.6;
+}
+.grid_6 {
+  background-image: url('../../img/projects/movieapi.jpeg');
+  background-size: cover;
+  opacity: 0.6;
 }
 
 .button_div {
@@ -27,7 +65,11 @@
 }
 
 h2 {
+  font-size: 40px;
+  margin: 0 auto;
   font-weight: 900;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
 .grid_links {
@@ -39,7 +81,7 @@ h2 {
   font-size: 80px;
   align-items: center;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   margin-top: 80px;
 }
 

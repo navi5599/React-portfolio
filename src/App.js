@@ -1,6 +1,8 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 
+//Components
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';

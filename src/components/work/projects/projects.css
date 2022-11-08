@@ -1,0 +1,83 @@
+.container {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+
+  color: var(--white-color);
+}
+
+.images {
+  width: 50%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.moda_info_section {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal_list {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.tech_used {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+img {
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.a-button-modal {
+  margin-top: 20px;
+  margin-right: 5px;
+  border: 2px solid var(--blue-color);
+  color: var(--white-color);
+  padding: 5px 20px;
+  width: 150px;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.a-button-modal:hover {
+  background-color: var(--blue-color);
+  color: var(--dark-blue);
+  transition: 0.3s ease-in-out;
+}
+
+.back_button {
+  font: inherit;
+  width: 150px;
+  padding: 3px;
+  text-transform: uppercase;
+  background-color: var(--blue-color);
+  color: var(--dark-blue);
+  border: 2px solid var(--blue-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back_button:hover {
+  opacity: 0.77;
+  transition: ease 0.23s;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
