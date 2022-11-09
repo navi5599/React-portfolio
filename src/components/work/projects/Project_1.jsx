@@ -17,7 +17,7 @@ function Project_1({ handleProjects }) {
         </div>
 
         <div className="moda_info_section">
-          <div class="modal_text">
+          <div className="modal_text">
             <p>
               Meet app is PWA type of application made using React.This project
               was part of Career Foundry Full-stack web dev course.To make this
@@ -28,8 +28,8 @@ function Project_1({ handleProjects }) {
               about 2 weeks to complete this application.
             </p>
           </div>
-          <div class="modal_list">
-            <p class="p_modal">Tech used</p>
+          <div className="modal_list">
+            <p className="p_modal">Tech used</p>
             <ul className="tech_used">
               <li>HTML</li>
               <li>CSS</li>
@@ -39,7 +39,7 @@ function Project_1({ handleProjects }) {
             </ul>
           </div>
           <div className="links">
-            <div class="content_buttons">
+            <div className="content_buttons">
               <a
                 className="a-button-modal"
                 href="https://github.com/navi5599/meet"

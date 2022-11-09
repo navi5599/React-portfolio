@@ -17,29 +17,65 @@ function Project_5({ handleProjects }) {
         </div>
 
         <div className="moda_info_section">
-          <div class="modal_text">
+          <div className="modal_text">
             <p>
-              This is a movie application, similar the one made with React,
-              instead, I used Angular as framework.App have features like,
-              registering and logging into app, searching for movies and adding
-              them into favorites. Also you will be able to update and delete
-              account. Data is fetched from API that I made, and is available in
-              works section. To style app I used Angular's materials. It took me
-              two weeks to finish this app.
+              This is a movie application made using Angular. The app has
+              features like registering and logging into the app, searching for
+              movies and adding them to favorite list. Also, you will be able to
+              update and delete your account.
+            </p>
+
+            <p>
+              This application was a personal project and part of the Career
+              Foundry course. The aim was to create a full-stack Application
+              using MEAN stack. While developing this project I learned about
+              SPA (single page apps), and how to build them with Angular and
+              Angular materials
+            </p>
+
+            <p>
+              I faced challenges during the development stage: Passing data
+              between components, and implementing loaders. To understand better
+              how passing data works, I contacted my Tutor for help. With help
+              of a tutor, I managed to acquire this skill. To deal with loaders,
+              I decided to use help and ideas from google, and try to implement
+              them myself. This turned out successful.
             </p>
           </div>
-          <div class="modal_list">
-            <p class="p_modal">Tech used</p>
+          <div className="modal_list">
+            <p className="p_modal">Tech used</p>
             <ul className="tech_used">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Angular v14.2.0</li>
-              <li>Angular materials</li>
+              <li>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg"
+                  alt="html icon"
+                />
+              </li>
+              <li>
+                {' '}
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg"
+                  alt="css icon"
+                />
+              </li>
+              <li>
+                {' '}
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="javascript icon"
+                />
+              </li>
+              <li>
+                {' '}
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg"
+                  alt="angular icon"
+                />
+              </li>
             </ul>
           </div>
           <div className="links">
-            <div class="content_buttons">
+            <div className="content_buttons">
               <a
                 className="a-button-modal"
                 href="https://github.com/navi5599/myFlix-Angular"

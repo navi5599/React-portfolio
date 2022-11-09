@@ -14,7 +14,7 @@ function Project_4({ handleProjects }) {
         </div>
 
         <div className="moda_info_section">
-          <div class="modal_text">
+          <div className="modal_text">
             <p>
               Chat App is a Mobile application made using React Native.This
               project was part of Career Foundry Full-stack web dev course.To
@@ -24,8 +24,8 @@ function Project_4({ handleProjects }) {
               please visit Github, and follow instructions to get app running.
             </p>
           </div>
-          <div class="modal_list">
-            <p class="p_modal">Tech used</p>
+          <div className="modal_list">
+            <p className="p_modal">Tech used</p>
             <ul className="tech_used">
               <li>HTML</li>
               <li>CSS</li>
@@ -35,7 +35,7 @@ function Project_4({ handleProjects }) {
             </ul>
           </div>
           <div className="links">
-            <div class="content_buttons">
+            <div className="content_buttons">
               <a
                 className="a-button-modal"
                 href="https://github.com/navi5599/Chat_App"

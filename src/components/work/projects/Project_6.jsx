@@ -17,7 +17,7 @@ function Project_6({ handleProjects }) {
         </div>
 
         <div className="moda_info_section">
-          <div class="modal_text">
+          <div className="modal_text">
             <p>
               This is RESTful API that I developed using Node and Express, and
               for database I used MongoDB. This is first time I got chance to
@@ -25,8 +25,8 @@ function Project_6({ handleProjects }) {
               link, there is full documentation available.
             </p>
           </div>
-          <div class="modal_list">
-            <p class="p_modal">Tech used</p>
+          <div className="modal_list">
+            <p className="p_modal">Tech used</p>
             <ul className="tech_used">
               <li>HTML</li>
               <li>CSS</li>
@@ -37,7 +37,7 @@ function Project_6({ handleProjects }) {
             </ul>
           </div>
           <div className="links">
-            <div class="content_buttons">
+            <div className="content_buttons">
               <a
                 className="a-button-modal"
                 href="https://github.com/navi5599/myFlix-app"

@@ -165,6 +165,10 @@ button:disabled {
   .copy li {
     font-size: small;
   }
+
+  .contact_heading {
+    font-size: 40px;
+  }
 }
 
 .contact_heading {

@@ -13,13 +13,12 @@
   align-items: center;
 
   background: #0f0c29; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+}
+
+.navbar-links {
+  height: 100%;
 }
 
 .list {
@@ -62,4 +61,7 @@
 .list a:hover {
   color: var(--blue-color);
   transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 800px) {
 }

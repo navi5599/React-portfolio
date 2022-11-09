@@ -17,7 +17,7 @@ function Project_3({ handleProjects }) {
         </div>
 
         <div className="moda_info_section">
-          <div class="modal_text">
+          <div className="modal_text">
             <p>
               This is a simple Pokedex app made using vanilla JavaScript, with
               some jQuery. It fetches data from public API. Developing this app,
@@ -25,8 +25,8 @@ function Project_3({ handleProjects }) {
               style the app.It took me one week to finish this application.
             </p>
           </div>
-          <div class="modal_list">
-            <p class="p_modal">Tech used</p>
+          <div className="modal_list">
+            <p className="p_modal">Tech used</p>
             <ul className="tech_used">
               <li>HTML</li>
               <li>CSS</li>
@@ -36,7 +36,7 @@ function Project_3({ handleProjects }) {
             </ul>
           </div>
           <div className="links">
-            <div class="content_buttons">
+            <div className="content_buttons">
               <a
                 className="a-button-modal"
                 href="https://github.com/navi5599/simple-js-app"

@@ -3,6 +3,7 @@ import React from 'react';
 import './projects.css';
 
 import image1 from '../../../img/projects/project2/flix1.png';
+
 import image2 from '../../../img/projects/project2/flix2.png';
 
 function Project_2({ handleProjects }) {
@@ -17,28 +18,71 @@ function Project_2({ handleProjects }) {
         </div>
 
         <div className="moda_info_section">
-          <div class="modal_text">
+          <div className="modal_text">
             <p>
-              This is a movie application made using React.App have features
-              like, registering and logging into app, searching for movies and
-              adding them into favorites. Also you will be able to update and
-              delete account.I also used Redux to handle states of the app,
-              which helped me to get insight into redux and how it works.It took
-              me about 2 weeks to complete this application.
+              This is a movie application made using React. The app has features
+              like registering and logging into the app, searching for movies
+              and adding them to favorite list. Also, you will be able to update
+              and delete your account.
+            </p>
+            <br></br>
+            <p>
+              This application was a personal project and part of the Career
+              Foundry course. The aim was to create a full-stack Application
+              using MERN stack. While developing this project I learned how APIs
+              work, and how to implement them into any React app.
+            </p>
+            <br></br>
+            <p>
+              I faced challenges during the development stage: Managing the
+              state using Redux, and dealing with validation and handling them.
+              To better understand how Redux handles states, I asked my Tutor
+              for help, and he helped me understand it better and implement it
+              the right way into the app. The validation I handled myself, as I
+              estimated that I can work it out with a few ideas from Google. It
+              took me about two weeks to complete this app
             </p>
           </div>
-          <div class="modal_list">
-            <p class="p_modal">Tech used</p>
+          <div className="modal_list">
+            <p className="p_modal">Tech used</p>
             <ul className="tech_used">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>React v18.2</li>
-              <li>Redux v4.2.0</li>
+              <li>
+                {' '}
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg"
+                  alt="html icon"
+                />
+              </li>
+              <li>
+                {' '}
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg"
+                  alt="css icon"
+                />
+              </li>
+              <li>
+                {' '}
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="javascript icon"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+                  alt="react icon"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+                  alt="redux icon"
+                />
+              </li>
             </ul>
           </div>
           <div className="links">
-            <div class="content_buttons">
+            <div className="content_buttons">
               <a
                 className="a-button-modal"
                 href="https://github.com/navi5599/myFlix-client"
