@@ -37,3 +37,30 @@ span {
 .image {
   width: 700px;
 }
+
+@media (max-width: 800px) {
+  .hello {
+    font-size: 40px;
+  }
+
+  .image {
+    width: 350px;
+  }
+
+  .text_section {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .code_link {
+    width: 60px;
+    padding: 2.5px 10px;
+    margin-top: 10px;
+  }
+
+  .text {
+    text-align: center;
+  }
+}

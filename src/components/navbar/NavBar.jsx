@@ -17,8 +17,13 @@ function NavBar() {
           Ivan Kelava
         </Link>
       </h1>
+      <a href="#" class="toggle-button" onClick={handleList}>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
 
-      <div class="navbar-links">
+      <div class={`navbar-links ${isActive ? 'active' : ''}`}>
         <ul className="list">
           <li>
             <Link to="h0me" smooth={true} duration={1000}>

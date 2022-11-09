@@ -126,6 +126,19 @@ button:disabled {
   opacity: 0.75;
 }
 
+.contact_heading {
+  text-transform: uppercase;
+  font-size: 73px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 150px;
+}
+
+.contact_span {
+  color: var(--dark-blue) !important;
+}
+
 @media (max-width: 800px) {
   .contact_card {
     display: flex;
@@ -169,17 +182,4 @@ button:disabled {
   .contact_heading {
     font-size: 40px;
   }
-}
-
-.contact_heading {
-  text-transform: uppercase;
-  font-size: 73px;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 50px;
-  margin-top: 150px;
-}
-
-.contact_span {
-  color: var(--dark-blue) !important;
 }
