@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "default": "src/index.html",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,7 +22,7 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.2",
     "buffer": "^6.0.3",
-    "parcel": "^2.6.2",
+    "parcel": "^2.0.0-rc.0",
     "process": "^0.11.10"
   },
   "scripts": {
