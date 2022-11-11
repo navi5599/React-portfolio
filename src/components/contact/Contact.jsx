@@ -73,12 +73,12 @@ function Contact() {
             <li>
               <span className="contact_span">Skype</span>
               <a href="skype:uberman5599@hotmail.com">
-                uberman5599@hotmail.com
+                uberman5599[at]hotmail.com
               </a>
             </li>
             <li>
               <span className="contact_span">Email</span>
-              <a href="mailto:ivkelava10@gmail.com">ivkelava10@gmail.com</a>
+              <a href="mailto:ivkelava10@gmail.com">ivkelava10[at]gmail.com</a>
             </li>
           </ul>
         </div>

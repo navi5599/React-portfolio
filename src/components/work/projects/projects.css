@@ -2,7 +2,6 @@
   width: 90%;
   display: flex;
   justify-content: space-around;
-
   color: var(--white-color);
 }
 
@@ -14,11 +13,22 @@
   justify-content: space-evenly;
 }
 
+.modal_text {
+  max-height: 400px;
+  overflow: scroll;
+  border-bottom: 2px solid var(--blue-color);
+}
+
+.text_headers {
+  font-weight: bold;
+}
+
 .moda_info_section {
   padding: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-height: 620px;
 }
 
 .modal_list {
@@ -85,4 +95,9 @@ ul li img {
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
+}
+
+.contrast_icon {
+  background-color: var(--white-color);
+  border-radius: 5px;
 }

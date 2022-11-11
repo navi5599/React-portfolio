@@ -28,6 +28,11 @@ function Footer() {
             <img src={linkedin} className="linkedin-icon" alt="LinkedIn icon" />
           </a>
         </div>
+        <div className="footer_text">
+          <p>Designed and coded by Ivan Kelava</p>
+
+          <p>All rights reserved</p>
+        </div>
       </footer>
     </div>
   );
