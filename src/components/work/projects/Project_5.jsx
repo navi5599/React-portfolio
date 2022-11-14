@@ -20,18 +20,18 @@ function Project_5({ handleProjects }) {
         <div className="moda_info_section">
           <div className="modal_text">
             <p>
-              This is a movie application made using React. The app has features
-              like registering and logging into the app, searching for movies
-              and adding them to favorite list. Also, you will be able to update
-              and delete your account.
+              This is a movie application made using Angular. The app has
+              features like registering and logging into the app, searching for
+              movies and adding them to favorite list. Also, you will be able to
+              update and delete your account.
             </p>
 
             <br></br>
             <p>
               This application was a personal project and part of the Career
               Foundry course. The aim was to create a full-stack Application
-              using MERN stack. While developing this project I learned how APIs
-              work, and how to implement them into any React app.
+              using MEAN stack. While developing this project I learned how APIs
+              work, and how to implement them into any Angular app.
             </p>
             <br></br>
             <p className="text_headers">Building API:</p>
@@ -49,38 +49,21 @@ function Project_5({ handleProjects }) {
             <p>
               After making an <span>API</span>, it was necessary to build some
               user interface so that users could make those requests and make
-              use of an actual application. <span>React</span> was a perfect fit
-              for this kind of app, and therefore I decided to use React with
-              help of Redux. I like the concept of React, its building structure
-              with components, and the freedom it gives to the developer to
-              choose from a variety of React tools and packages.
+              use of an actual application. As i already used React for one of
+              mine identical apps, I decided to use another JavaScript
+              framework, Angular. To develop interface I used Angular Materials,
+              as it provides some really nice and reusable components, such as
+              dialogs, buttons and cards.
             </p>
-            <br></br>
-            <p className="text_headers">Challenges:</p>
-            <br></br>
-            <p>
-              I faced challenges during the development stage: Managing the
-              state using Redux. Understanding how state works in React was not
-              big of a problem, but when I needed to do the same thing using
-              Redux, it got complicated pretty easily. The method of logging
-              changes into the console wasn´t that much of use, but whit the
-              help of <span>Redux devtools</span> I managed to understand how to
-              handle
-              <span> states</span> using the Redux store. This was also
-              opportunity to make use of <span>Google</span> and to read and
-              understand other developers code. Most of the time I found myself
-              using <span>Stackoverflow</span> as it was really helpful.
-            </p>
+
             <br></br>
             <p className="text_headers">Completion:</p>
             <br></br>
             <p>
-              To complete this app, it took me more than any other achievement
-              on Career Foundry course, about two weeks. It was because I spent
-              more time to deal with mentioned challenges. To achieve this, and
-              to improve and manage my workspace, I used <span>Kanban</span>{' '}
-              approach. It helped me a lot to stay on track and finish this
-              project in reasonable time.
+              To complete this app, it took me more than one week. To achieve
+              this, and to improve and manage my workspace, I used{' '}
+              <span>Kanban</span> approach. It helped me a lot to stay on track
+              and finish this project in reasonable time.
             </p>
           </div>
           <div className="modal_list">

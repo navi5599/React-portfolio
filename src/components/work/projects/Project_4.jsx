@@ -17,65 +17,43 @@ function Project_4({ handleProjects }) {
         <div className="moda_info_section">
           <div className="modal_text">
             <p>
-              This is a movie application made using React. The app has features
-              like registering and logging into the app, searching for movies
-              and adding them to favorite list. Also, you will be able to update
-              and delete your account.
+              This is a React Native app developed using open source platform
+              Expo. It is a simple Chat app with features like: Homescreen where
+              user can chose name and color of background. Sending messages,
+              location or send photos, either from library or taken with phone
+              camera.
             </p>
 
             <br></br>
             <p>
               This application was a personal project and part of the Career
-              Foundry course. The aim was to create a full-stack Application
-              using MERN stack. While developing this project I learned how APIs
-              work, and how to implement them into any React app.
+              Foundry course. The aim was to create a mobile app using React
+              Native. Chat app interface is build with Gifted chat library. To
+              store all the data I used Google Firebase, and for the local
+              storage i used React Native`s async storage, as this is its own
+              system.
             </p>
-            <br></br>
-            <p className="text_headers">Building API:</p>
-            <br></br>
-            <p>
-              To learn how APIs work, I needed to make one myself. I developed
-              RESTful API using <span>Nodejs</span> and <span>Express</span>. In
-              order to understand better the HTTP requests I spent extra time
-              using Postman and testing those. Also, this was the time when I
-              first learned about HTTP authentication and JWT authentication.
-            </p>
-            <br></br>
-            <p className="text_headers">Building UI:</p>
-            <br></br>
-            <p>
-              After making an <span>API</span>, it was necessary to build some
-              user interface so that users could make those requests and make
-              use of an actual application. <span>React</span> was a perfect fit
-              for this kind of app, and therefore I decided to use React with
-              help of Redux. I like the concept of React, its building structure
-              with components, and the freedom it gives to the developer to
-              choose from a variety of React tools and packages.
-            </p>
+
             <br></br>
             <p className="text_headers">Challenges:</p>
             <br></br>
             <p>
-              I faced challenges during the development stage: Managing the
-              state using Redux. Understanding how state works in React was not
-              big of a problem, but when I needed to do the same thing using
-              Redux, it got complicated pretty easily. The method of logging
-              changes into the console wasn´t that much of use, but whit the
-              help of <span>Redux devtools</span> I managed to understand how to
-              handle
-              <span> states</span> using the Redux store. This was also
-              opportunity to make use of <span>Google</span> and to read and
-              understand other developers code. Most of the time I found myself
-              using <span>Stackoverflow</span> as it was really helpful.
+              I faced challenges during the development stage: Storing images
+              into Google Firebase. After implementing Google firestore, I made
+              functions that would update and eventually store messages into
+              Firebase. The problem I encountered is that messages would be
+              saved successfully, but when sending images, they wouldn`t be
+              displayed. Luckily, solution was pretty easy, as I didn`t defined
+              any image property in the function where I update message. That
+              way image couldn`t be passed to the messages and eventually
+              couldn`t be stored to the firebase.
             </p>
             <br></br>
             <p className="text_headers">Completion:</p>
             <br></br>
             <p>
-              To complete this app, it took me more than any other achievement
-              on Career Foundry course, about two weeks. It was because I spent
-              more time to deal with mentioned challenges. To achieve this, and
-              to improve and manage my workspace, I used <span>Kanban</span>{' '}
+              To complete this app, it took me about two weeks. To achieve this,
+              and to improve and manage my workspace, I used <span>Kanban</span>{' '}
               approach. It helped me a lot to stay on track and finish this
               project in reasonable time.
             </p>

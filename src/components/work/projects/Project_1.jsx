@@ -21,67 +21,46 @@ function Project_1({ handleProjects }) {
           <div className="modal_text">
             <p>
               Meet app is PWA type of application made using React.This project
-              was part of Career Foundry Full-stack web dev course.To make this
-              app, I used TDD (test driven development) approach.Obviously, this
-              was first time I got chance to work with stuff like AWS Lambda and
-              serverless.I also got chance to learn how to deal with Google
-              APIs, as i was using it to fetch data for my events.It took me
-              about 2 weeks to complete this application.
+              was part of Career Foundry Full-stack web development course. App
+              has features like: Displaying upcoming events and searching for
+              the same. Expanding event card to view more info about upcoming
+              event.
             </p>
 
             <br></br>
             <p>
-              This application was a personal project and part of the Career
-              Foundry course. The aim was to create a full-stack Application
-              using MERN stack. While developing this project I learned how APIs
-              work, and how to implement them into any React app.
+              To make this app, I used TDD (test driven development)
+              approach.Obviously, this was first time I got chance to work with
+              stuff like AWS Lambda and serverless.I also got chance to learn
+              how to deal with Google APIs, as I was using it to fetch data for
+              my events.It took me about 2 weeks to complete this application.
             </p>
             <br></br>
-            <p className="text_headers">Building API:</p>
+            <p className="text_headers">Google API:</p>
             <br></br>
             <p>
-              To learn how APIs work, I needed to make one myself. I developed
-              RESTful API using <span>Nodejs</span> and <span>Express</span>. In
-              order to understand better the HTTP requests I spent extra time
-              using Postman and testing those. Also, this was the time when I
-              first learned about HTTP authentication and JWT authentication.
+              First time I met with APIs, is in Movie project where I made API
+              myself. This time I used Googles API to fetch data about upcoming
+              events. Since Google Calendar APi is a protected API, I also
+              needed to implement 0Auth token authorization. To issue OAuth2
+              tokens I used AWS Lambda functions.
             </p>
             <br></br>
             <p className="text_headers">Building UI:</p>
             <br></br>
             <p>
-              After making an <span>API</span>, it was necessary to build some
-              user interface so that users could make those requests and make
-              use of an actual application. <span>React</span> was a perfect fit
-              for this kind of app, and therefore I decided to use React with
-              help of Redux. I like the concept of React, its building structure
-              with components, and the freedom it gives to the developer to
-              choose from a variety of React tools and packages.
+              For the frontend part I used JavaScript library React. To style
+              the app I used pure CSS, and for the layout I used flexbox. For
+              the data visualization I used Recharts library. Recharts provides
+              some really fancy scatter and pie charts, and is well documented.
             </p>
-            <br></br>
-            <p className="text_headers">Challenges:</p>
-            <br></br>
-            <p>
-              I faced challenges during the development stage: Managing the
-              state using Redux. Understanding how state works in React was not
-              big of a problem, but when I needed to do the same thing using
-              Redux, it got complicated pretty easily. The method of logging
-              changes into the console wasn´t that much of use, but whit the
-              help of <span>Redux devtools</span> I managed to understand how to
-              handle
-              <span> states</span> using the Redux store. This was also
-              opportunity to make use of <span>Google</span> and to read and
-              understand other developers code. Most of the time I found myself
-              using <span>Stackoverflow</span> as it was really helpful.
-            </p>
+
             <br></br>
             <p className="text_headers">Completion:</p>
             <br></br>
             <p>
-              To complete this app, it took me more than any other achievement
-              on Career Foundry course, about two weeks. It was because I spent
-              more time to deal with mentioned challenges. To achieve this, and
-              to improve and manage my workspace, I used <span>Kanban</span>{' '}
+              To complete this app, it took me about one week. To achieve this,
+              and to improve and manage my workspace, I used <span>Kanban</span>{' '}
               approach. It helped me a lot to stay on track and finish this
               project in reasonable time.
             </p>

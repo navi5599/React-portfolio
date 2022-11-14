@@ -101,3 +101,31 @@ ul li img {
   background-color: var(--white-color);
   border-radius: 5px;
 }
+
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .images {
+    width: 100%;
+  }
+
+  .modal_text {
+    font-size: small;
+  }
+
+  ul li img {
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+  }
+
+  .a-button-modal,
+  .back_button {
+    width: 80px;
+    font-size: small;
+  }
+}

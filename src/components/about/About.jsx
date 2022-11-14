@@ -2,6 +2,9 @@ import React from 'react';
 import Scroll from '../scrollButton/Scroll';
 
 import './about.css';
+
+import en_cv from '../../cv/Ivan_Kelava_EN.pdf';
+import de_cv from '../../cv/Ivan_Kelava_DE.pdf';
 import profile from '../../img/portrait.jpeg';
 
 function About() {
@@ -40,19 +43,25 @@ function About() {
           <br></br>
           <br></br>
 
-          <p>
-            Here you can download my CV{' '}
-            <span>
-              <a
-                href="#"
-                target="_self"
-                className="download_cv_btn code "
-                download
-              >
-                Download CV
-              </a>
-            </span>
-          </p>
+          <p>Here you can download my CV </p>
+          <div className="downloads">
+            <a
+              href={en_cv}
+              target="_self"
+              className="download_cv_btn code "
+              download
+            >
+              English CV
+            </a>
+            <a
+              href={de_cv}
+              target="_self"
+              className="download_cv_btn code deutsch "
+              download
+            >
+              German CV
+            </a>
+          </div>
         </div>
       </div>
 
