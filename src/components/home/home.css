@@ -2,6 +2,10 @@ body {
   color: var(--white-color);
 }
 
+.home {
+  min-height: 86vh;
+}
+
 .hello {
   text-transform: uppercase;
   font-size: 100px;

@@ -15,11 +15,7 @@ function Home() {
         </h1>
 
         <div className="text_section">
-          <img
-            src={img}
-            alt=""
-            className="image animate__animated animate__fadeInUp"
-          />
+          <img src={img} alt="" className="image " />
           <div className="text animate__animated animate__fadeInUp">
             <p>
               My name is <span>Ivan Kelava</span>. I am a{' '}
