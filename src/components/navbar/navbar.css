@@ -8,6 +8,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  min-height: 90px;
   padding: 10px 25px;
   align-items: center;
   background: #0f0c29; /* fallback for old browsers */

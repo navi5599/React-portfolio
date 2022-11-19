@@ -9,13 +9,17 @@ function Home() {
     <>
       <div id="h0me"></div>
       <div className="home">
-        <h1 className="hello animate__animated animate__fadeInDown">
+        <h1 className="hello ">
           Hel<span>l</span>
           <span>o</span>!
         </h1>
 
         <div className="text_section">
-          <img src={img} alt="" className="image " />
+          <img
+            src={img}
+            alt=""
+            className="image animate__animated animate__fadeInUp"
+          />
           <div className="text animate__animated animate__fadeInUp">
             <p>
               My name is <span>Ivan Kelava</span>. I am a{' '}
