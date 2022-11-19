@@ -10,9 +10,8 @@ import profile from '../../img/portrait.jpeg';
 function About() {
   return (
     <>
-      <div id="white" className="white">
-        <Scroll />
-      </div>
+      <Scroll />
+      <div id="white" className="white"></div>
 
       <h1 id="about" className="about_heading">
         About <span>me</span>!
