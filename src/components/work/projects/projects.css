@@ -16,7 +16,19 @@
 .modal_text {
   max-height: 400px;
   overflow: scroll;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
   border-bottom: 2px solid var(--blue-color);
+}
+
+.modal_text::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--mid-dark-blue);
+  border-radius: 4px;
+}
+
+.modal_text::-webkit-scrollbar-thumb {
+  background-color: var(--blue-color);
+  border-radius: 4px;
 }
 
 .text_headers {

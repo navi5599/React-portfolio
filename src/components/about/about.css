@@ -135,6 +135,10 @@ ul li img {
     flex-wrap: wrap;
   }
 
+  .icon_list li {
+    margin-right: 20px;
+  }
+
   .white {
     height: 335px;
     margin-top: 20px;
